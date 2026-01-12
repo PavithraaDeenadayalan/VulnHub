@@ -45,6 +45,24 @@ VulnHub is a **healthcare-themed cybersecurity training platform** built with pu
 - 🖥️ **Zero Dependencies**: No database required, runs instantly on XAMPP
 - 🔒 **Built-in Safety**: Localhost enforcement prevents accidental exposure
 
+VulnHub is designed as a progressively expanding security training platform.
+While the current release focuses on the most critical and commonly exploited vulnerabilities, the architecture already supports all OWASP Top 10 categories.
+
+Several modules are actively being built and are intentionally marked as “Coming Soon” in the application sidebar to reflect real development status.
+
+| OWASP ID | Vulnerability Category             | Status         | Notes                                  |
+| -------- | ---------------------------------- | -------------- | -------------------------------------- |
+| **A01**  | Broken Access Control              | ✅ Implemented  | Fully functional (4 difficulty levels) |
+| **A02**  | Cryptographic Failures             | 🚧 In Progress | Weak hashing, key misuse, token flaws  |
+| **A03**  | Injection                          | ✅ Implemented  | Includes advanced PHP deserialization  |
+| **A04**  | Insecure Design                    | 🚧 In Progress | Business logic & workflow abuse        |
+| **A05**  | Security Misconfiguration          | ✅ Implemented  | Debug leaks, defaults, IDOR            |
+| **A06**  | Vulnerable Components              | 🛠️ Planned    | Dependency trust & version risks       |
+| **A07**  | Authentication Failures            | 🛠️ Planned    | Session, MFA, brute-force logic        |
+| **A08**  | Software & Data Integrity          | 🛠️ Planned    | Deserialization, update trust          |
+| **A09**  | Logging & Monitoring Failures      | 🛠️ Planned    | Silent attacks, alert bypass           |
+| **A10**  | Server-Side Request Forgery (SSRF) | 🛠️ Planned    | Internal service abuse                 |
+
 ---
 
 ## ⚡ Quick Start
@@ -244,9 +262,11 @@ if (!in_array($_SERVER['HTTP_HOST'], $allowed_hosts)) {
 
 ---
 
-## 👤 Author
+## 👤 Author and Team Members
 
 **Pavithraa Deenadayalan**
+**Mrinalini**
+**Pradeep**
 
 - 🌐 GitHub: [@PavithraaDeenadayalan](https://github.com/PavithraaDeenadayalan)
 - 📧 Email: pavithraadeenadayalan35@gmail.com
