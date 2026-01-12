@@ -299,18 +299,15 @@ Contributions welcome! To add new vulnerability modules:
 
 **Ideas for New Modules:**
 - A02: Cryptographic Failures
-- A07: Cross-Site Scripting (XSS)
-- A08: Insecure Deserialization
-- A10: Server-Side Request Forgery (SSRF)
-
+- A04:  Insecure Design  
 ---
 
 <div align="center">
 
 **⭐ Star this repo if VulnHub helped you learn! ⭐**
 
-Built with ❤️ for healthcare cybersecurity education
-
-*Last Updated: January 2025 | Version 1.0*
+Built with ❤️ for cybersecurity education
 
 </div>
+
+*Last Updated: January 2025 | Version 1.0*
