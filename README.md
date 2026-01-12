@@ -308,6 +308,7 @@ Contributions welcome! To add new vulnerability modules:
 
 Built with ❤️ for cybersecurity education
 
+*Last Updated: January 2025 | Version 1.0*
+
 </div>
 
-*Last Updated: January 2025 | Version 1.0*
