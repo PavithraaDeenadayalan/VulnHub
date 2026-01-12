@@ -264,9 +264,9 @@ if (!in_array($_SERVER['HTTP_HOST'], $allowed_hosts)) {
 
 ## 👤 Author and Team Members
 
-**Pavithraa Deenadayalan**
-**Mrinalini**
-**Pradeep**
+**Pavithraa Deenadayalan**  
+**Mrinalini**  
+**Pradeep**  
 
 - 🌐 GitHub: [@PavithraaDeenadayalan](https://github.com/PavithraaDeenadayalan)
 - 📧 Email: pavithraadeenadayalan35@gmail.com
