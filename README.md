@@ -1,4 +1,4 @@
-# MedVulnLab — Interactive Healthcare Security Lab (Intentional Vulns)
+# VulnHub — Interactive Healthcare Security Lab (Intentional Vulns)
 
 **CRITICAL SECURITY NOTICE — LOCALHOST ONLY. DO NOT DEPLOY PUBLICLY.**  
 This app is intentionally vulnerable for ethical training. Every flaw is documented and isolated. Use only in a controlled environment.
