@@ -1,0 +1,26 @@
+# MedVulnLab - Educational Lab
+# Security headers and configuration
+
+# Prevent directory listing
+Options -Indexes
+
+# Security headers (educational lab - minimal security)
+<IfModule mod_headers.c>
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# PHP configuration (if allowed)
+<IfModule mod_php7.c>
+    php_flag display_errors On
+    php_value error_reporting E_ALL
+</IfModule>
+
+# Default file
+DirectoryIndex index.php
