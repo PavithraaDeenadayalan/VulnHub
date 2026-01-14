@@ -14,21 +14,21 @@
 
 ---
 
-## 🚨 SECURITY NOTICE
+##  SECURITY NOTICE
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║  ⚠️  INTENTIONALLY VULNERABLE — LOCALHOST ONLY  ⚠️             ║
+║      INTENTIONALLY VULNERABLE — LOCALHOST ONLY                ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║  Contains REAL exploitable vulnerabilities for education.    ║
-║  ❌ NEVER deploy publicly  ❌ NEVER use real patient data     ║
-║  ✅ Localhost only (127.0.0.1)  ✅ Educational use only       ║
+║     NEVER deploy publicly    NEVER use real patient data     ║
+║     Localhost only (127.0.0.1)     Educational use only       ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## 📖 What is VulnHub?
+##  What is VulnHub?
 
 VulnHub is a **healthcare-themed cybersecurity training platform** built with pure procedural PHP (no frameworks, no database). It simulates a medical facility's web application with intentional security flaws, providing hands-on experience with **OWASP Top 10** vulnerabilities in realistic clinical workflows.
 
@@ -39,11 +39,11 @@ VulnHub is a **healthcare-themed cybersecurity training platform** built with pu
 - Critical infrastructure security awareness
 
 **Key Features:**
-- 🏥 **6 User Roles**: Doctor, Patient, Lab Tech, Pharmacist, Billing, Admin
-- 🎯 **3 OWASP Modules**: A01 (Access Control), A03 (Injection), A05 (Misconfiguration)
-- 📊 **12 Total Flags**: 4 difficulty levels per module (LOW → IMPOSSIBLE)
-- 🖥️ **Zero Dependencies**: No database required, runs instantly on XAMPP
-- 🔒 **Built-in Safety**: Localhost enforcement prevents accidental exposure
+-    **6 User Roles**: Doctor, Patient, Lab Tech, Pharmacist, Billing, Admin
+-    **3 OWASP Modules**: A01 (Access Control), A03 (Injection), A05 (Misconfiguration)
+-    **12 Total Flags**: 4 difficulty levels per module (LOW → IMPOSSIBLE)
+-    **Zero Dependencies**: No database required, runs instantly on XAMPP
+-    **Built-in Safety**: Localhost enforcement prevents accidental exposure
 
 VulnHub is designed as a progressively expanding security training platform.
 While the current release focuses on the most critical and commonly exploited vulnerabilities, the architecture already supports all OWASP Top 10 categories.
@@ -52,20 +52,20 @@ Several modules are actively being built and are intentionally marked as “Comi
 
 | OWASP ID | Vulnerability Category             | Status         | Notes                                  |
 | -------- | ---------------------------------- | -------------- | -------------------------------------- |
-| **A01**  | Broken Access Control              | ✅ Implemented  | Fully functional (4 difficulty levels) |
-| **A02**  | Cryptographic Failures             | 🚧 In Progress | Weak hashing, key misuse, token flaws  |
-| **A03**  | Injection                          | ✅ Implemented  | Includes advanced PHP deserialization  |
-| **A04**  | Insecure Design                    | 🚧 In Progress | Business logic & workflow abuse        |
-| **A05**  | Security Misconfiguration          | ✅ Implemented  | Debug leaks, defaults, IDOR            |
-| **A06**  | Vulnerable Components              | 🛠️ Planned    | Dependency trust & version risks       |
-| **A07**  | Authentication Failures            | 🛠️ Planned    | Session, MFA, brute-force logic        |
-| **A08**  | Software & Data Integrity          | 🛠️ Planned    | Deserialization, update trust          |
-| **A09**  | Logging & Monitoring Failures      | 🛠️ Planned    | Silent attacks, alert bypass           |
-| **A10**  | Server-Side Request Forgery (SSRF) | 🛠️ Planned    | Internal service abuse                 |
+| **A01**  | Broken Access Control              |   Implemented  | Fully functional (4 difficulty levels) |
+| **A02**  | Cryptographic Failures             |   In Progress | Weak hashing, key misuse, token flaws  |
+| **A03**  | Injection                          |   Implemented  | Includes advanced PHP deserialization  |
+| **A04**  | Insecure Design                    |   In Progress | Business logic & workflow abuse        |
+| **A05**  | Security Misconfiguration          |   Implemented  | Debug leaks, defaults, IDOR            |
+| **A06**  | Vulnerable Components              |   Planned    | Dependency trust & version risks       |
+| **A07**  | Authentication Failures            |   Planned    | Session, MFA, brute-force logic        |
+| **A08**  | Software & Data Integrity          |   Planned    | Deserialization, update trust          |
+| **A09**  | Logging & Monitoring Failures      |   Planned    | Silent attacks, alert bypass           |
+| **A10**  | Server-Side Request Forgery (SSRF) |   Planned    | Internal service abuse                 |
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Installation (3 Steps)
 
@@ -98,18 +98,18 @@ http://localhost/VulnHub/
 
 ---
 
-## 🎯 Vulnerability Modules
+##   Vulnerability Modules
 
-### 🔓 A01 — Broken Access Control
+###   A01 — Broken Access Control
 
 **Healthcare Impact**: Unauthorized patient record access (HIPAA violations)
 
 | Level | Vulnerability | Exploit |
 |-------|--------------|---------|
-| 🟢 **LOW** | Missing ownership checks | URL manipulation: `?patient_id=pat004` |
-| 🟡 **MEDIUM** | Frontend-only auth | Modify cookies/POST data to escalate privileges |
-| 🟠 **HARD** | Workflow bypass | Skip prescription approval steps |
-| 🔴 **IMPOSSIBLE** | Secure RBAC | Proper server-side validation (unbreakable) |
+|  **LOW** | Missing ownership checks | URL manipulation: `?patient_id=pat004` |
+|  **MEDIUM** | Frontend-only auth | Modify cookies/POST data to escalate privileges |
+|  **HARD** | Workflow bypass | Skip prescription approval steps |
+|  **IMPOSSIBLE** | Secure RBAC | Proper server-side validation (unbreakable) |
 
 **Example Flag**: `FLAG{a01_low_missing_relationship_check}`
 
@@ -121,10 +121,10 @@ http://localhost/VulnHub/
 
 | Level | Vulnerability | Exploit |
 |-------|--------------|---------|
-| 🟢 **LOW** | Array logic injection | Craft search queries to bypass filters |
-| 🟡 **MEDIUM** | Path traversal (LFI) | `?file=../../../flag.txt` to read secrets |
-| 🟠 **HARD** | PHP deserialization | Craft malicious objects for code execution |
-| 🔴 **IMPOSSIBLE** | Whitelist validation | Safe file handling (unbreakable) |
+|  **LOW** | Array logic injection | Craft search queries to bypass filters |
+|  **MEDIUM** | Path traversal (LFI) | `?file=../../../flag.txt` to read secrets |
+|  **HARD** | PHP deserialization | Craft malicious objects for code execution |
+|  **IMPOSSIBLE** | Whitelist validation | Safe file handling (unbreakable) |
 
 **Example Flag**: `FLAG{a03_medium_path_traversal_lfi}`
 
@@ -136,16 +136,16 @@ http://localhost/VulnHub/
 
 | Level | Vulnerability | Exploit |
 |-------|--------------|---------|
-| 🟢 **LOW** | Debug mode enabled | Trigger errors to leak paths/config |
-| 🟡 **MEDIUM** | Default credentials | Login as admin with `admin/admin123` |
-| 🟠 **HARD** | Predictable IDs (IDOR) | Enumerate records: `?record_id=1,2,3...` |
-| 🔴 **IMPOSSIBLE** | Hardened config | UUIDs, error suppression (unbreakable) |
+|  **LOW** | Debug mode enabled | Trigger errors to leak paths/config |
+|  **MEDIUM** | Default credentials | Login as admin with `admin/admin123` |
+|  **HARD** | Predictable IDs (IDOR) | Enumerate records: `?record_id=1,2,3...` |
+|  **IMPOSSIBLE** | Hardened config | UUIDs, error suppression (unbreakable) |
 
 **Example Flag**: `FLAG{a05_low_debug_mode_info_disclosure}`
 
 ---
 
-## 🏗️ Technical Architecture
+##  Technical Architecture
 
 ```
 Technology Stack:
@@ -167,7 +167,7 @@ Security Features:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 VulnHub/
@@ -199,28 +199,28 @@ VulnHub/
 
 ---
 
-## 🎓 Learning Objectives
+##  Learning Objectives
 
 **Offensive Skills:**
-- ✅ Broken access control exploitation (IDOR, privilege escalation)
-- ✅ Injection attacks (array logic, path traversal, deserialization)
-- ✅ Security misconfiguration identification
-- ✅ Manual penetration testing methodology
+-  Broken access control exploitation (IDOR, privilege escalation)
+-  Injection attacks (array logic, path traversal, deserialization)
+-  Security misconfiguration identification
+-  Manual penetration testing methodology
 
 **Defensive Skills:**
-- ✅ RBAC implementation patterns
-- ✅ Input validation strategies
-- ✅ Secure session management
-- ✅ Defense-in-depth architecture
+-  RBAC implementation patterns
+-  Input validation strategies
+-  Secure session management
+-  Defense-in-depth architecture
 
 **Healthcare Security:**
-- ✅ HIPAA privacy implications
-- ✅ Electronic Protected Health Information (ePHI) safeguards
-- ✅ Clinical workflow security considerations
+-  HIPAA privacy implications
+-  Electronic Protected Health Information (ePHI) safeguards
+-  Clinical workflow security considerations
 
 ---
 
-## 🛡️ Safety & Ethics
+##  Safety & Ethics
 
 ### Built-in Protections
 
@@ -234,12 +234,12 @@ if (!in_array($_SERVER['HTTP_HOST'], $allowed_hosts)) {
 
 ### Ethical Use Policy
 
-✅ **Permitted:**
+ **Permitted:**
 - Educational training on localhost
 - Security research in isolated environments
 - Course/workshop demonstrations
 
-❌ **Prohibited:**
+ **Prohibited:**
 - Production deployment
 - Public internet exposure
 - Testing on systems you don't own
@@ -262,19 +262,19 @@ if (!in_array($_SERVER['HTTP_HOST'], $allowed_hosts)) {
 
 ---
 
-## 👤 Author and Team Members
+##  Author and Team Members
 
 **Pavithraa Deenadayalan**  
 **Mrinalini**  
 **Pradeep**  
 
-- 🌐 GitHub: [@PavithraaDeenadayalan](https://github.com/PavithraaDeenadayalan)
-- 📧 Email: pavithraadeenadayalan35@gmail.com
-- 💼 Project: [VulnHub Repository](https://github.com/PavithraaDeenadayalan/VulnHub)
+-  GitHub: [@PavithraaDeenadayalan](https://github.com/PavithraaDeenadayalan)
+-  Email: pavithraadeenadayalan35@gmail.com
+-  Project: [VulnHub Repository](https://github.com/PavithraaDeenadayalan/VulnHub)
 
 ---
 
-## 📜 License & Disclaimer
+##  License & Disclaimer
 
 **License**: Educational use only. Not for production deployment.
 
@@ -287,7 +287,7 @@ if (!in_array($_SERVER['HTTP_HOST'], $allowed_hosts)) {
 
 ---
 
-## 🌟 Contributing
+##  Contributing
 
 Contributions welcome! To add new vulnerability modules:
 
@@ -308,7 +308,4 @@ Contributions welcome! To add new vulnerability modules:
 
 Built with ❤️ for cybersecurity education
 
-*Last Updated: January 2025 | Version 1.0*
-
 </div>
-
