@@ -18,7 +18,7 @@ define('MAX_LOGIN_ATTEMPTS', 5);
 define('LOCKOUT_DURATION', 300); // 5 minutes
 
 // Application settings
-define('APP_NAME', 'MedVulnLab');
+define('APP_NAME', 'VulnHub');
 define('APP_VERSION', '1.0.0');
 
 // Ensure application only runs on localhost
