@@ -112,7 +112,7 @@ $total_flags = get_total_flags();
             </div>
             
             <div class="welcome-section">
-                <h2>Welcome to MedVulnLab</h2>
+                <h2>Welcome to VulnHub</h2>
                 <p>
                     This is an educational lab designed to help you understand modern web security vulnerabilities.
                     Use the sidebar navigation to explore different OWASP Top 10 vulnerabilities.
