@@ -131,7 +131,7 @@ $level_names = [
                     <div class="vuln-levels" style="display: <?php echo $current_module === $code ? 'block' : 'none'; ?>;">
                         <?php foreach ($levels as $level): ?>
                             <?php
-                            $level_path = "/MedVulnLab/modules/{$vuln['path']}/{$level}.php";
+                            $level_path = "/VulnHub/modules/{$vuln['path']}/{$level}.php";
                             $is_active = ($current_module === $code && $current_level === $level);
                             $has_flag_badge = has_flag($code, $level);
                             ?>
@@ -158,8 +158,8 @@ $level_names = [
     </nav>
     
     <div class="sidebar-footer">
-        <a href="/MedVulnLab/index.php" class="dashboard-link"> Dashboard</a>
-        <a href="/MedVulnLab/auth/logout.php" class="logout-link"> Logout</a>
+        <a href="/VulnHub/index.php" class="dashboard-link"> Dashboard</a>
+        <a href="/VulnHub/auth/logout.php" class="logout-link"> Logout</a>
     </div>
 </div>
 
@@ -203,7 +203,7 @@ function toggleVuln(code) {
         };
         const path = paths[code] || '';
         if (path) {
-            window.location.href = `/MedVulnLab/modules/${path}/low.php`;
+            window.location.href = `/VulnHub/modules/${path}/low.php`;
         }
     }
 }
