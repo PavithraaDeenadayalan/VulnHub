@@ -12,13 +12,13 @@ require_once __DIR__ . '/../data/seed.php';
 // Handle logout
 if (isset($_GET['logout'])) {
     logout();
-    header('Location: /MedVulnLab/auth/login.php');
+    header('Location: /VulnHub/auth/login.php');
     exit;
 }
 
 // Redirect if already logged in
 if (is_authenticated()) {
-    header('Location: /MedVulnLab/index.php');
+    header('Location: /VulnHub/index.php');
     exit;
 }
 
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['role'] = $user['role'];
             $_SESSION['name'] = $user['name'];
             
-            header('Location: /MedVulnLab/index.php');
+            header('Location: /VulnHub/index.php');
             exit;
         } else {
             $error = 'Invalid username or password.';
