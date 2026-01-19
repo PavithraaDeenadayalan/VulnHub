@@ -27,7 +27,7 @@ function is_authenticated() {
  */
 function require_auth() {
     if (!is_authenticated()) {
-        header('Location: /MedVulnLab/auth/login.php');
+        header('Location: /VulnHub/auth/login.php');
         exit;
     }
 }
@@ -43,7 +43,7 @@ function require_role($allowed_roles) {
     }
     
     if (!in_array($_SESSION['role'], $allowed_roles)) {
-        header('Location: /MedVulnLab/index.php?error=access_denied');
+        header('Location: /VulnHub/index.php?error=access_denied');
         exit;
     }
 }
